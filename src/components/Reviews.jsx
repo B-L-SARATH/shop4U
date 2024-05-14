@@ -14,7 +14,7 @@ const Reviews = ({ product }) => {
   const [ratingvalue, setratingvalue] = useState(0);
   const { id } = useParams();
   const [currentuserid, setcurrentuserid] = useState("");
-  const [submitreview , setsubmitreview] = useState(false);
+  const [submitreview, setsubmitreview] = useState(false);
   const addreview = async (e) => {
     setsubmitreview(true);
     e.preventDefault();
@@ -50,10 +50,10 @@ const Reviews = ({ product }) => {
     <>
       {showmodal && (
         <div
-          style={{   
-           zIndex: 10,
+          style={{
+            zIndex: 10,
             // backgroundColor:"red",
-            backgroundColor : "rgba(0,0,0,0.7)",
+            backgroundColor: "rgba(0,0,0,0.7)",
             height: "100%",
             width: "100%",
             position: "fixed",
@@ -105,25 +105,25 @@ const Reviews = ({ product }) => {
         <div>
           <h2 className="my-5 text-center">Add Your Review</h2>
           {isloggedin ? (
-            <form onSubmit={addreview} className="container">
+            <form onSubmit={addreview} className="container ">
               <div>
                 <label htmlFor="rating" className="m-3">
                   Rating
                 </label>
                 <div>
-                  <span className="m-3" style={{ fontSize: "30px" }}>
+                  <span className="m-2" style={{ fontSize: "30px" }}>
                     😟
                   </span>
-                  <span className="m-3" style={{ fontSize: "30px" }}>
+                  <span className="m-2" style={{ fontSize: "30px" }}>
                     😦
                   </span>
-                  <span className="m-3" style={{ fontSize: "30px" }}>
+                  <span className="m-2" style={{ fontSize: "30px" }}>
                     ☹️
                   </span>
-                  <span className="m-3" style={{ fontSize: "30px" }}>
+                  <span className="m-2" style={{ fontSize: "30px" }}>
                     😐
                   </span>
-                  <span className="m-3" style={{ fontSize: "30px" }}>
+                  <span className="m-2" style={{ fontSize: "30px" }}>
                     🙂
                   </span>
                 </div>
@@ -134,9 +134,9 @@ const Reviews = ({ product }) => {
                     }}
                   >
                     {ratingvalue > 0 ? (
-                      <i class="fa-solid fa-star m-4"></i>
+                      <i class="fa-solid fa-star m-3"></i>
                     ) : (
-                      <i class="fa-regular fa-star m-4"></i>
+                      <i class="fa-regular fa-star m-3"></i>
                     )}
                   </span>
                   <span
@@ -145,9 +145,9 @@ const Reviews = ({ product }) => {
                     }}
                   >
                     {ratingvalue > 1 ? (
-                      <i class="fa-solid fa-star m-4"></i>
+                      <i class="fa-solid fa-star m-3"></i>
                     ) : (
-                      <i class="fa-regular fa-star m-4"></i>
+                      <i class="fa-regular fa-star m-3"></i>
                     )}
                   </span>
                   <span
@@ -156,9 +156,9 @@ const Reviews = ({ product }) => {
                     }}
                   >
                     {ratingvalue > 2 ? (
-                      <i class="fa-solid fa-star m-4"></i>
+                      <i class="fa-solid fa-star m-3"></i>
                     ) : (
-                      <i class="fa-regular fa-star m-4"></i>
+                      <i class="fa-regular fa-star m-3"></i>
                     )}
                   </span>
                   <span
@@ -167,9 +167,9 @@ const Reviews = ({ product }) => {
                     }}
                   >
                     {ratingvalue > 3 ? (
-                      <i class="fa-solid fa-star m-4"></i>
+                      <i class="fa-solid fa-star m-3"></i>
                     ) : (
-                      <i class="fa-regular fa-star m-4"></i>
+                      <i class="fa-regular fa-star m-3"></i>
                     )}
                   </span>
                   <span
@@ -178,9 +178,9 @@ const Reviews = ({ product }) => {
                     }}
                   >
                     {ratingvalue > 4 ? (
-                      <i class="fa-solid fa-star m-4"></i>
+                      <i class="fa-solid fa-star m-3"></i>
                     ) : (
-                      <i class="fa-regular fa-star m-4"></i>
+                      <i class="fa-regular fa-star m-3"></i>
                     )}
                   </span>
                 </div>

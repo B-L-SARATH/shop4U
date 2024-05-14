@@ -58,10 +58,11 @@ const Navbar = () => {
             {isloggedin && (
               <div class="dropdown">
                 <button
-                  class="btn btn-dark dropdown-toggle"
+                  class="btn btn-dark dropdown-toggle m-2"
                   type="button"
                   data-bs-toggle="dropdown"
-                  aria-expanded="false"
+                  aria-expanded="false" 
+
                 >
                   My Account
                 </button>
@@ -89,35 +90,37 @@ const Navbar = () => {
                 </ul>
               </div>
             )}
-            {/* card display block  when user logged in  */}
-            {isloggedin && (
-              <Link to="/cartitems" className="text-decoration-none">
-                {" "}
-                <span className="mx-4 position-relative">
-                  <i class="fa-solid fa-cart-shopping fa-1x "></i>
-                  <span className="text-white mx-1 ">Cart</span>
-                  <span class="badge text-bg-secondary">{totalqty}</span>
-                </span>
-              </Link>
-            )}
+            <div className="d-flex justify-content-center">
+              {/* card display block  when user logged in  */}
+              {isloggedin && (
+                <Link to="/cartitems" className="text-decoration-none my-2">
+                  {" "}
+                  <span className="mx-4 position-relative">
+                    <i class="fa-solid fa-cart-shopping fa-1x "></i>
+                    <span className="text-white mx-1 ">Cart</span>
+                    <span class="badge text-bg-secondary">{totalqty}</span>
+                  </span>
+                </Link>
+              )}
 
-            {/* login and logout button display */}
+              {/* login and logout button display */}
 
-            {isloggedin ? (
-              <button
-                class="btn btn-outline-light mx-2"
-                onClick={() => {
-                  removeItem("token");
-                  window.location.reload();
-                }}
-              >
-                Logout
-              </button>
-            ) : (
-              <Link to="/login" class="btn btn-outline-light mx-2">
-                Login
-              </Link>
-            )}
+              {isloggedin ? (
+                <button
+                  class="btn btn-outline-light mx-2"
+                  onClick={() => {
+                    removeItem("token");
+                    window.location.reload();
+                  }}
+                >
+                  Logout
+                </button>
+              ) : (
+                <Link to="/login" class="btn btn-outline-light mx-2">
+                  Login
+                </Link>
+              )}
+            </div>
           </div>
         </div>
       </nav>

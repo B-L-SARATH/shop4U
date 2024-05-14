@@ -92,7 +92,7 @@ const Ordersummary = () => {
   };
 
   return (
-    <div className="d-flex justify-content-between m-5 flex-wrap">
+    <div className="d-flex justify-content-between p-5 cartitemsdiv flex-wrap">
       <div className="d-flex flex-column m-2 " style={{ width: "600px" }}>
         <div className=" p-3">
           <h2 className="my-3">Shipping</h2>
@@ -105,7 +105,7 @@ const Ordersummary = () => {
         </div>
         <hr />
 
-        <div className="my-3 p-3">
+        <div className="my-3 p-3 cartitemsdiv">
           <h2 className="my-2">Order Items</h2>
 
           <table

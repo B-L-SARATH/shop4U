@@ -126,7 +126,7 @@ const ProductDetails = () => {
                     })}
                   </select>
                 </p> */
-                <div>
+                <>
                   <span>
                     <button
                       onClick={() => setqty((prev) => prev - 1)}
@@ -146,15 +146,15 @@ const ProductDetails = () => {
                       +
                     </button>
                   </span>
-                </div>
+                </>
               )}
               {isloggedin ? (
                 product.countInStock > 0 ? (
-                  <button className="btn btn-dark" onClick={addtocart}>
+                  <button className="btn btn-dark mx-4" onClick={addtocart}>
                     {additemloading ? "..." : "Add to cart"}
                   </button>
                 ) : (
-                  <button className="btn btn-dark" disabled>
+                  <button className="btn btn-dark mx-4" disabled>
                     Out of stock
                   </button>
                 )

@@ -79,16 +79,17 @@ const Orderdetails = () => {
           <h2>Order Items</h2>
           <table className="table">
             <tbody>
-              {order.orderItems.map((item) => (
-                <tr key={item._id}>
-                  <td>
-                    <img src={item.image} alt="" style={{ width: "50px" }} />
-                  </td>
-                  <td>{item.name}</td>
-                  <td>{item.qty}</td>
-                  <td>{item.price}</td>
-                </tr>
-              ))}
+              {order.orderItems.length > 0 &&
+                order.orderItems.map((item) => (
+                  <tr key={item._id}>
+                    <td>
+                      <img src={item.image} alt="" style={{ width: "50px" }} />
+                    </td>
+                    <td>{item.name}</td>
+                    <td>{item.qty}</td>
+                    <td>{item.price}</td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

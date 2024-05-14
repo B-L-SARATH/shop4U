@@ -36,7 +36,7 @@ const Editprofile = () => {
   };
 
   return (
-    <div className="container m-5 p-5">
+    <div className="container m-5 p-5 updateprofile">
       <form action="" onSubmit={handlesubmit}>
         <label htmlFor="">Name</label>
         <input

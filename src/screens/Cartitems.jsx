@@ -26,7 +26,7 @@ const Cartitems = () => {
   };
 
   return (
-    <div className="mx-3 my-2">
+    <div className="mx-3 my-2 ">
       {cartitems.length === 0 ? (
         <>
           <div className="d-flex justify-content-center flex-column align-items-center">
@@ -42,10 +42,13 @@ const Cartitems = () => {
         <>
           <h1 className="mx-5 my-3"> Shopping Cart</h1>
 
-          <div className="d-flex justify-content-around p-5 flex-wrap">
+          <div className="d-flex justify-content-around p-5 flex-wrap gap-5 cartitemsdiv">
             {/* cartitemsdiv */}
 
-            <table className="table container" style={{ width: "800px" }}>
+            <table
+              className="table container cartitemtable"
+              style={{ width: "800px" }}
+            >
               {cartitems.map((item, index) => (
                 <tr>
                   <td>

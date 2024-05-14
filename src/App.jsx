@@ -31,6 +31,8 @@ import Paymentsuccess from "./screens/Paymentsuccess";
 import Changepassword from "./screens/Changepassword";
 
 import Resetpassword from "./components/Resetpassword";
+
+import "./App.css";
 function App() {
   return (
     <>

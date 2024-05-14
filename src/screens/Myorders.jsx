@@ -26,11 +26,11 @@ const Orders = () => {
           {orders.map((order) => {
             return (
               <>
-                <div className="d-flex justify-content-between shadow border p-3 m-2 mx-4 my-2">
+                <div className="d-flex justify-content-center shadow border p-3 m-2 my-2 flex-wrap">
                   <div className="mx-3 p-2">
                     <i class="fa-solid fa-box text-dark"></i>
                   </div>
-                  <div style={{ width: "90%", overflow: "hidden" }}>
+                  <div style={{ width: "900px", overflow: "hidden" }}>
                     <p>
                       Ordered on{" "}
                       {order.createdAt
@@ -48,8 +48,8 @@ const Orders = () => {
                       </span>
                     ))}
                   </div>
-                  <div style={{ width: "10%" }}>
-                    <Link className="btn btn-dark" to={`/order/${order._id}`}>
+                  <div style={{ width: "100px" }}>
+                    <Link className="btn btn-dark m-2" to={`/order/${order._id}`}>
                       view
                     </Link>
                   </div>
