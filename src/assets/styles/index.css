@@ -1,0 +1,23 @@
+i {
+  font-size: 1.5rem;
+  color: rgb(189, 189, 31);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+/* styles.css */
+.pagination .page-link {
+  color: black;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .orderitems {
+    width: 400px !important;
+    background-color: red !important;
+  }
+}
