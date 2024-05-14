@@ -70,7 +70,7 @@ const Reviews = ({ product }) => {
           />
         </div>
       )}
-      <div className="container my-5 p-5">
+      <div className="container my-5 p-3">
         <h2 className="mx-5 my-5 text-center">Reviews</h2>
         {product.reviews.length === 0 && (
           <p className="alert alert-primary">No reviews</p>
@@ -105,7 +105,7 @@ const Reviews = ({ product }) => {
         <div>
           <h2 className="my-5 text-center">Add Your Review</h2>
           {isloggedin ? (
-            <form onSubmit={addreview} className="container ">
+            <form onSubmit={addreview} >
               <div>
                 <label htmlFor="rating" className="m-3">
                   Rating
