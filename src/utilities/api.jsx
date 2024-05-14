@@ -2,7 +2,7 @@ import axios from "axios";
 import { getLocalStorage } from "./authorization";
 
 export const instance = axios.create({
-  baseURL: "http://localhost:5000/api/",
+  baseURL: "https://shop4-ubackend.vercel.app/api/",
   headers: {
     "Content-Type": "application/json",
     Authorization: getLocalStorage("token") ? getLocalStorage("token") : " ",
