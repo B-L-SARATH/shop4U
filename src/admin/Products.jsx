@@ -10,8 +10,7 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalpages, setTotalPages] = useState(1);
   useEffect(() => {
-    if(location && location.search) 
-    {
+
     const searchparams = new URLSearchParams(location.search);
     const pagevalue = searchparams.get("page") || 1;
     const searchvalue = searchparams.get("search") || "";
@@ -28,8 +27,8 @@ const Products = () => {
       setTotalPages(res.pages);
     };
     getproducts();
-    }
-  }, [location]);
+    
+  }, [location.search]);
 
   const handledelete = async (id) => {
     const res = await api("delete", `/deleteproduct/${id}`);
