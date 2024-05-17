@@ -55,7 +55,7 @@ function Signup() {
         <br />
         <input
           className="form-control"
-          type="text"
+          type="password"
           placeholder="password"
           name="password"
           value={password}
