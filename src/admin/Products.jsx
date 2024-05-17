@@ -81,7 +81,7 @@ const Products = () => {
           ))}
         </tbody>
       </table>
-      <Pagination currentPage={currentPage} totalpages={totalpages} />
+      <Pagination currentPage={currentPage} totalpages={totalpages} location={location} />
     </div>
   );
 };
